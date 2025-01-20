@@ -1,8 +1,27 @@
+.smooch-sans {
+  font-family: "Smooch Sans", serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+.playwrite-vn{
+  font-family: "Playwrite VN", serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+.lexend-giga{
+  font-family: "Lexend Giga", serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
 .text-pole{
     width: 900px;
     height: 400px;
     border-radius: 3px;
     border: #000 2px solid;
+    font-size: 14px;
 }
 .btn-group {
     margin: 0 5px;
@@ -24,5 +43,9 @@
   
   .btn:hover {
     background-color: #eee;
+  }
+  .px{
+    display: flex;
+    justify-content: row;
   }
   

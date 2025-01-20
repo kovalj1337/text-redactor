@@ -1,20 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Smooch+Sans:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+VN:wght@100..400&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend+Giga:wght@100..900&display=swap" rel="stylesheet">
 </head>
+
 <body>
-    <div class='btn-group'>
-        <a class='btn' data-role='bold' href='#' title='Жирний текст' id="boldButton"><b>B</b></a>
-        <a class='btn' data-role='italic' href='#' title='Курсив'><em>I</em></a>
-        <a class='btn' data-role='underline' href='#' title='Підкреслений'><u><b>U</b></u></a>
-        <a class='btn' data-role='strikeThrough' href='#' title='Перекреслений текст'><strike>abc</strike></a>
-      </div>
+    <div>
+
+        <div class='btn-group'>
+            <a class='btn' data-role='bold' href='#' title='Жирний текст' id="boldButton"><b>B</b></a>
+            <a class='btn' data-role='italic' href='#' title='Курсив' id="italic"><em>I</em></a>
+            <a class='btn' data-role='underline' href='#' title='Підкреслений' id="underline"><u><b>U</b></u></a>
+            <a class='btn' data-role='strikeThrough' href='#' title='Перекреслений текст'
+                id="strikeThrough"><strike>abc</strike></a>
+        </div>
+        <div class="btn-group">
+            <a class='btn' data-role='bold' href='#' title='По лівому краю' id="textAlignLeft"><b>L</b></a>
+            <a class='btn' data-role='bold' href='#' title='Жирний текст' id="textAlignCenter"><b>C</b></a>
+            <a class='btn' data-role='bold' href='#' title='Жирний текст' id="textAlignRight"><b>R</b></a>
+        </div>
+        <div class="btn-group">
+            <form action="" id="colorForm">
+                <input type="color" id="colorPicker" name="color">
+                <button class="btn" type="submit">задати</button>
+            </form>
+        </div>
+        <div class="btn-group">
+            <a href="#" id="add">+</a>
+            <p id="font-size"></p>
+            <a href="#" id="minus">-</a>
+        </div>
+        <div>
+            <select name="font-family" id="fontfamily">
+                <option value="serif">serif</option>
+                <option value="monospace">monospace</option>
+                <option value="SmoochSans">SmoochSans</option>
+                <option value="PlaywriteVN">Playwrite VN</option>
+                <option value="LexendGiga">Lexend Giga</option>
+            </select>
+        </div>
+    </div>
     <div contenteditable="true" class="text-pole">
     </div>
     <script src="js.js"></script>
 </body>
+
 </html>
