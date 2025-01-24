@@ -18,8 +18,7 @@
 </head>
 
 <body>
-    <div>
-
+    <div class="menu">
         <div class='btn-group'>
             <a class='btn' data-role='bold' href='#' title='Жирний текст' id="boldButton"><b>B</b></a>
             <a class='btn' data-role='italic' href='#' title='Курсив' id="italic"><em>I</em></a>
@@ -35,10 +34,9 @@
         <div class="btn-group">
             <form action="" id="colorForm">
                 <input type="color" id="colorPicker" name="color">
-                <button class="btn" type="submit">задати</button>
             </form>
         </div>
-        <div class="btn-group">
+        <div class="btn-group px">
             <a href="#" id="add">+</a>
             <p id="font-size"></p>
             <a href="#" id="minus">-</a>
@@ -52,6 +50,36 @@
                 <option value="LexendGiga">Lexend Giga</option>
             </select>
         </div>
+        <div class="btn-group px">
+            <a href="#" id="add-letter-spacing">+</a>
+            <p id="letter-spacing"></p>
+            <a href="#" id="minus-letter-spacing">-</a>
+        </div>
+        <div class="btn-group px">
+            <button id="add-line-height">+</button>
+            <p id="line-height"></p>
+            <button id="minus-line-height">-</button>
+        </div>
+        <select name="textTransform" id="textTransform">
+            <option value="none">none</option>
+            <option value="uppercase">uppercase</option>
+            <option value="lowercase">lowercase</option>
+        </select>
+        <form id="gradientForm" class="btn-group">
+            <div class="input-gradient">
+                <input type="color" id="firstColorPicker" value="#FF0000">
+                <input type="number" id="firstPercent" placeholder="0%" min="0" max="100">
+                <label for="firstPercent">Перший колір</label>
+            </div>
+            <div class="input-gradient">
+                <input type="color" id="secondColorPicker" value="#0000FF">
+                <input type="number" id="secondPercent" placeholder="100%" min="0" max="100">
+                <label for="secondPercent">Другий колір</label>
+            </div>
+            <div class="btn-gradient-submit">
+                <button type="submit">Задати</button>
+            </div>
+        </form>  
     </div>
     <div contenteditable="true" class="text-pole">
     </div>
